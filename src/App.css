@@ -1,28 +1,88 @@
-.App {
+html{
+  background-color: white;
   text-align: center;
+  /* margin-le/ft: 2em; */
+  /* margin-right: 2em; */
+  /* font-size: 1vh; */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.navbar {
+  background-color: #1b2838;
+  z-index: 10;
+  height: 4em;
+  margin-bottom: 5em;
+  left: 0;
+  padding: 0 10px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.navbar-brand {
   color: white;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: .1em 1.8em;
+    text-decoration: none;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+.BeachCard {
+  background-color: white;
+    border-radius: 10px;
+  /* margin: 1em 1em 1em 1em; */
+  height: 40vh;
+  width: 35vh;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.9s cubic-bezier(.25,.8,.25,1);
 }
 
-.App-intro {
-  font-size: large;
+.BeachCard:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.beachName{
+  font-size: 4vh;
+  padding: .1em 1em 1em 1em;
+}
+
+.grid-container {
+  justify-content: center;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 4em 4em;
+}
+
+.cardheader{
+  margin: 1em 1em 1em 1em;
+  padding: 1em;
+}
+
+.ecoli{
+  font-size: 6vh;
+  /* height: 41%; */
+}
+
+.sampleDate{
+  display: inline-block;
+  /* vertical-align: baseline; */
+  /* position:absolute; */
+  width: 100%;
+  font-size: 2vh;
+  margin-bottom: 0px;
+}
+
+
+li {
+  list-style-type: none;
 }
