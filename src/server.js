@@ -6,7 +6,7 @@ var moment = require('moment');
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get('/api/hello', async (req, res) => {
+app.get('/beach', async (req, res) => {
   let response = await fetch('http://app.toronto.ca/tpha/ws/beaches.xml?v=1.0')
    response = await response.text()
    var result2 = convert.xml2json(response, {

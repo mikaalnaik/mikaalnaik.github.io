@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   caller = async () => {
-    let response = await fetch('/api/hello')
+    let response = await fetch('/beach')
     response = await response.text()
     let beachData = JSON.parse(response)
     this.setState({beach: beachData})
