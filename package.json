@@ -19,10 +19,14 @@
     "xml2json": "^0.11.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001/"
+  "proxy": "http://localhost:3001/",
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  }
 }
